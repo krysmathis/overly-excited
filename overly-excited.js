@@ -9,9 +9,11 @@ var sentence = walrus.split(" ");
 */
 function addExcitement (theWordArray) {
     var words = "";
+
     for ( var i = 0; i < theWordArray.length; i += 1 ) {
         words += theWordArray[i] + " ";
         console.log(words.trim());
+        
     }
 }
 
