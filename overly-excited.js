@@ -9,14 +9,13 @@ var nextSentence = fox.split(" ");
     the array as the sole argument. It should iterate over the array 
     and output the words to the browser console.
 */
-function addExcitement (theWordArray, displayChar) {
+const addExcitement = function (theWordArray, displayChar) {
     
     var words = "";
     var c = 1;
 
     //  When we reach the third iteration add the display char
     //  Repeat the display char based on how many times you can divide it by 3
-
     for ( var i = 0; i < theWordArray.length; i += 1 ) {
         if (c % 3 === 0) {
             words += theWordArray[i] + displayChar.repeat(c/3) + " ";
